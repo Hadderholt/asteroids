@@ -1,3 +1,4 @@
+import sys
 import pygame
 from constants import *
 from player import Player  # Add this import
@@ -40,7 +41,7 @@ def main():
                 sys.exit
 
         screen.fill("black")
-        
+
         for sprite in drawable:
             # Assuming each sprite in the drawable group has a draw() method
             sprite.draw(screen)
